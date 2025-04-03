@@ -1,0 +1,9 @@
+<Files .env>
+order allow,deny
+Deny from all
+</Files>
+
+<Files *.js>
+order allow,deny
+Deny from all
+</Files>
