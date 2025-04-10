@@ -15,22 +15,22 @@
 2024-12-03 12:17:19 [INFO]: Incoming request: POST /api/user/sendOTP - Body: {"email":"mayur.kmphasis@gmail.com"}
 2024-12-03 12:17:19 [INFO]: Outgoing response: POST /api/user/sendOTP - Status: 426 - Duration: 26ms - Response: {"version":"1.0.0","statusCode":426,"isSuccess":false,"data":{},"message":"Please update the app to continue using it without missing any new updates."}
 2024-12-03 12:17:19 [INFO]: Outgoing response: POST /api/user/sendOTP - Status: 426 - Duration: 28ms - Response: "{\"version\":\"1.0.0\",\"statusCode\":426,\"isSuccess\":false,\"data\":{},\"message\":\"Please update the app to continue using it without missing any new updates.\"}"
-2024-12-03 12:17:35 [INFO]: Incoming request: POST /api/user/changePassword - Body: {"old_password":"12345","new_password":"123456"}
+2024-12-03 12:17:35 [INFO]: Incoming request: POST /api/user/changePassword - Body: {"oldPassword":"12345","newPassword":"123456"}
 2024-12-03 12:17:35 [INFO]: Outgoing response: POST /api/user/changePassword - Status: 426 - Duration: 22ms - Response: {"version":"1.0.0","statusCode":426,"isSuccess":false,"data":{},"message":"Please update the app to continue using it without missing any new updates."}
 2024-12-03 12:17:35 [INFO]: Outgoing response: POST /api/user/changePassword - Status: 426 - Duration: 23ms - Response: "{\"version\":\"1.0.0\",\"statusCode\":426,\"isSuccess\":false,\"data\":{},\"message\":\"Please update the app to continue using it without missing any new updates.\"}"
-2024-12-03 12:18:16 [INFO]: Incoming request: POST /api/user/changePassword - Body: {"old_password":"12345","new_password":"123456"}
+2024-12-03 12:18:16 [INFO]: Incoming request: POST /api/user/changePassword - Body: {"oldPassword":"12345","newPassword":"123456"}
 2024-12-03 12:18:16 [INFO]: Outgoing response: POST /api/user/changePassword - Status: 426 - Duration: 22ms - Response: {"version":"1.0.0","statusCode":426,"isSuccess":false,"data":{},"message":"Please update the app to continue using it without missing any new updates."}
 2024-12-03 12:18:16 [INFO]: Outgoing response: POST /api/user/changePassword - Status: 426 - Duration: 24ms - Response: "{\"version\":\"1.0.0\",\"statusCode\":426,\"isSuccess\":false,\"data\":{},\"message\":\"Please update the app to continue using it without missing any new updates.\"}"
-2024-12-03 12:18:24 [INFO]: Incoming request: POST /api/user/changePassword - Body: {"old_password":"12345","new_password":"123456"}
+2024-12-03 12:18:24 [INFO]: Incoming request: POST /api/user/changePassword - Body: {"oldPassword":"12345","newPassword":"123456"}
 2024-12-03 12:18:24 [INFO]: Outgoing response: POST /changePassword - Status: 401 - Duration: 27ms - Response: {"version":"1.0.0","statusCode":401,"isSuccess":false,"data":{},"message":"You are not authorized to access associated web-services."}
 2024-12-03 12:18:24 [INFO]: Outgoing response: POST /changePassword - Status: 401 - Duration: 29ms - Response: "{\"version\":\"1.0.0\",\"statusCode\":401,\"isSuccess\":false,\"data\":{},\"message\":\"You are not authorized to access associated web-services.\"}"
-2024-12-03 12:21:04 [INFO]: Incoming request: POST /api/user/changePassword - Body: {"old_password":"12345","new_password":"123456"}
+2024-12-03 12:21:04 [INFO]: Incoming request: POST /api/user/changePassword - Body: {"oldPassword":"12345","newPassword":"123456"}
 2024-12-03 12:21:04 [INFO]: Outgoing response: POST /api/user/changePassword - Status: 407 - Duration: 27ms - Response: {"version":"1.0.0","statusCode":407,"isSuccess":false,"data":{},"message":"Please update the app to continue using it without missing any new updates."}
 2024-12-03 12:21:04 [INFO]: Outgoing response: POST /api/user/changePassword - Status: 407 - Duration: 30ms - Response: "{\"version\":\"1.0.0\",\"statusCode\":407,\"isSuccess\":false,\"data\":{},\"message\":\"Please update the app to continue using it without missing any new updates.\"}"
-2024-12-03 12:23:31 [INFO]: Incoming request: POST /api/user/changePassword - Body: {"old_password":"12345","new_password":"123456"}
+2024-12-03 12:23:31 [INFO]: Incoming request: POST /api/user/changePassword - Body: {"oldPassword":"12345","newPassword":"123456"}
 2024-12-03 12:23:31 [INFO]: Outgoing response: POST /changePassword - Status: 401 - Duration: 26ms - Response: {"version":"1.0.0","statusCode":401,"isSuccess":false,"data":{},"message":"You are not authorized to access associated web-services."}
 2024-12-03 12:23:31 [INFO]: Outgoing response: POST /changePassword - Status: 401 - Duration: 28ms - Response: "{\"version\":\"1.0.0\",\"statusCode\":401,\"isSuccess\":false,\"data\":{},\"message\":\"You are not authorized to access associated web-services.\"}"
-2024-12-03 12:24:21 [INFO]: Incoming request: POST /api/user/changePassword - Body: {"old_password":"12345","new_password":"123456"}
+2024-12-03 12:24:21 [INFO]: Incoming request: POST /api/user/changePassword - Body: {"oldPassword":"12345","newPassword":"123456"}
 2024-12-03 12:24:21 [INFO]: Outgoing response: POST /changePassword - Status: 401 - Duration: 31ms - Response: {"version":"1.0.0","statusCode":401,"isSuccess":false,"data":{},"message":"You are not authorized to access associated web-services."}
 2024-12-03 12:24:21 [INFO]: Outgoing response: POST /changePassword - Status: 401 - Duration: 32ms - Response: "{\"version\":\"1.0.0\",\"statusCode\":401,\"isSuccess\":false,\"data\":{},\"message\":\"You are not authorized to access associated web-services.\"}"
 2025-02-13 06:07:49 [INFO]: Incoming request: POST /api/auth/login - Body: {}

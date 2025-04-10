@@ -22,10 +22,10 @@ userController.updateProfile = async function (req, res, next) {
 
 userController.changePassword = async function (req, res, next) {
     let response;
-    const { old_password, new_password } = req.body;
+    const { oldPassword, newPassword } = req.body;
     try {
         let userId = req.user._id;
-        response = await userService.changePassword(userId, old_password, new_password, req.token);
+        response = await userService.changePassword(userId, oldPassword, newPassword, req.token);
 
     } catch (errorCode) {
         console.error("userController.changePassword - ", errorCode);

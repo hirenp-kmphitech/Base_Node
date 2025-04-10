@@ -5,7 +5,7 @@ class appError {
 
         this.version = commonConfig.version;
         this.statusCode = statusCode || 500; // Default to 500 if no status code is provided
-        this.isSucess = false;
+        this.isSuccess = false;
         this.data = null;
         this.message = msg;
     }

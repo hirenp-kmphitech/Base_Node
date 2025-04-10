@@ -42,7 +42,7 @@ const forgotPassword = async (email) => {
     if (!findAdmin) {
       response = ApiResponse.notFound(commonConfig.messages['incorrect_email']);
     } else {
-      const updateOTP = await AdminMaster.findOneAndUpdate({ email: email.toLowerCase() }, { otp: randomOTP }, { new: true })
+      const updateOTP = await adminRepository.findUserAndUpdate({ email: email.toLowerCase() }, { otp: randomOTP }, { new: true })
       if (updateOTP) {
         let mailContent = forgotPasswordMail(findAdmin.name, randomOTP);
         sendMail(email.toLowerCase(), "Forgot Password Mail", mailContent);
@@ -80,14 +80,14 @@ const verifyOTP = async (email, otp) => {
 };
 
 
-const resetPassword = async (email, new_password) => {
+const resetPassword = async (email, newPassword) => {
   let response;
   try {
     let adminDetails = await adminRepository.findOne({ email: email });
 
     if (adminDetails != null) {
-      if (adminDetails.password != new_password) {
-        let userResponseObj = await adminRepository.findUserAndUpdate({ email: email }, { password: new_password });
+      if (adminDetails.password != newPassword) {
+        let userResponseObj = await adminRepository.findUserAndUpdate({ email: email }, { password: newPassword });
         response = ApiResponse.success(userResponseObj, commonConfig.messages['password_change_success']);
       } else {
         response = ApiResponse.conflict(commonConfig.messages['check_password']);

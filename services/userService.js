@@ -46,20 +46,20 @@ const updateProfile = async (req, userId) => {
   return response;
 }
 
-const changePassword = async (userId, old_password, new_password, token) => {
+const changePassword = async (userId, oldPassword, newPassword, token) => {
   let response;
   try {
     let getUser = await userRepository.findUser({ _id: userId });
 
     if (getUser != null) {
-      if (getUser.password != old_password) {
+      if (getUser.password != oldPassword) {
         response = ApiResponse.conflict(commonConfig.messages['check_old_password']);
       }
-      else if (getUser.password == new_password) {
+      else if (getUser.password == newPassword) {
         response = ApiResponse.conflict(commonConfig.messages['check_password']);
       }
       else {
-        let userResponseObj = await userRepository.findUserAndUpdate({ _id: userId }, { password: new_password });
+        let userResponseObj = await userRepository.findUserAndUpdate({ _id: userId }, { password: newPassword });
         userResponseObj.token = token;
         response = ApiResponse.success(userResponseObj, commonConfig.messages['password_change_success']);
       }

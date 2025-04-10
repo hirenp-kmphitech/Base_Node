@@ -1,0 +1,5 @@
+2025-03-31 09:28:21 [ERROR]: Error occurred: Cannot find /auth/login on this server - StatusCode: 404
+2025-03-31 09:28:25 [ERROR]: Error occurred: Cannot find /auth/login on this server - StatusCode: 404
+2025-03-31 09:28:33 [ERROR]: Error occurred: Cannot find /auth/login on this server - StatusCode: 404
+2025-03-31 09:33:54 [ERROR]: Error occurred: Cannot find /api/auth/updateProfile on this server - StatusCode: 404
+2025-03-31 09:34:07 [ERROR]: Error occurred: Cannot find /api/user.updateProfile on this server - StatusCode: 404

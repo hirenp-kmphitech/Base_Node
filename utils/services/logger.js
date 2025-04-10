@@ -1,6 +1,7 @@
 const { createLogger, format, transports } = require('winston');
 const commonConfig = require('../../config/common.config');
 const { combine, timestamp, printf, errors } = format;
+const DailyRotateFile = require('winston-daily-rotate-file'); // Import the daily rotate file transport
 
 // Custom log format
 const customFormat = printf(({ level, message, timestamp, stack }) => {
@@ -17,8 +18,21 @@ const logger = createLogger({
     ),
     transports: [
         new transports.Console(), // Log to the console
-        new transports.File({ filename: 'logs/errors.log', level: 'error' }), // Log only errors to errors.log
-        new transports.File({ filename: 'logs/combined.log' }) // Log all levels to combined.log
+        // Error logs (daily rotation)
+        new DailyRotateFile({
+            filename: 'logs/errors-%DATE%.log', // Filename pattern with date placeholder
+            level: 'error',
+            datePattern: 'YYYY-MM-DD', // Date format for file naming
+            zippedArchive: true, // Optional: compress old log files
+            maxFiles: '30d' // Optional: keep only 14 days of logs
+        }),
+        // Combined logs (daily rotation)
+        new DailyRotateFile({
+            filename: 'logs/combined-%DATE%.log',
+            datePattern: 'YYYY-MM-DD',
+            zippedArchive: true,
+            maxFiles: '30d'
+        }),
     ],
 });
 

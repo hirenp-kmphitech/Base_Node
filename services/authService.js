@@ -56,9 +56,24 @@ const forgotPassword = async (email) => {
 
     let userResponseObj = await userRepository.findUserAndUpdate({ email: emailLower }, { ucode: otpCode });
     if (userResponseObj) {
-      // let mailContent = await forgotPasswordMail(userResponseObj.name, otpCode);
-      // sendMail(email, "Forgot Password Mail", mailContent);
-      response = ApiResponse.success({ otpCode: otpCode, email: email, _id: userResponseObj._id }, config.messages['reset_password_success']);
+      let responseMsg = "";
+      if (userResponseObj != null && userResponseObj.is_fb == 1) {
+        responseMsg = emailLower + " " + config.messages['isFb_user'];
+        response = ApiResponse.badRequest(config.messages['isFb_user'])
+      }
+      else if (userResponseObj != null && userResponseObj.is_google == 1) {
+        responseMsg = emailLower + " " + config.messages['isGoogle_user'];
+        response = ApiResponse.badRequest(responseMsg);
+      }
+      else if (userResponseObj != null && userResponseObj.is_apple == 1) {
+        responseMsg = emailLower + " " + config.messages['isApple_user'];
+        response = ApiResponse.badRequest(responseMsg);
+      }
+      else {
+        // let mailContent = await forgotPasswordMail(userResponseObj.name, otpCode);
+        // sendMail(email, "Forgot Password Mail", mailContent);
+        response = ApiResponse.success({ otpCode: otpCode, email: email, _id: userResponseObj._id }, config.messages['reset_password_success']);
+      }
     }
     else {
       response = ApiResponse.notFound(config.messages['invalid_userId']);
@@ -92,7 +107,19 @@ const login = async (email, pass, deviceToken = "", deviceType = "") => {
   try {
     let userResponseObj = await userRepository.findUser({ email: email.toLowerCase(), deletedAt: null });
     if (userResponseObj) {
-      if (userResponseObj.password == pass) {
+      if (userResponseObj != null && userResponseObj.is_fb == 1) {
+        responseMsg = email + " " + config.messages['isFb_user'];
+        response = ApiResponse.badRequest(config.messages['isFb_user'])
+      }
+      else if (userResponseObj != null && userResponseObj.is_google == 1) {
+        responseMsg = email + " " + config.messages['isGoogle_user'];
+        response = ApiResponse.badRequest(responseMsg);
+      }
+      else if (userResponseObj != null && userResponseObj.is_apple == 1) {
+        responseMsg = email + " " + config.messages['isApple_user'];
+        response = ApiResponse.badRequest(responseMsg);
+      }
+      else if (userResponseObj.password == pass) {
         await userRepository.findUserAndUpdate({ _id: userResponseObj._id }, { deviceToken: deviceToken, deviceType: deviceType });
         let token = jwt.sign({ userId: userResponseObj._id }, config.jwt.secret, { expiresIn: config.jwt.token_expiry });
         userResponseObj._doc.token = token;
@@ -101,7 +128,7 @@ const login = async (email, pass, deviceToken = "", deviceType = "") => {
         response = ApiResponse.success(userResponseObj, config.messages['login_success']);
       }
       else {
-        response = ApiResponse.conflict(userResponseObj, config.messages['incorrect_password']);
+        response = ApiResponse.conflict(config.messages['incorrect_password']);
       }
     }
     else {
@@ -178,14 +205,20 @@ const Registration = async (request) => {
   return response;
 }
 
-const updatePassword = async (userId, new_password) => {
+const updatePassword = async (userId, newPassword) => {
   let response;
   try {
     let getUser = await userRepository.findUser({ _id: userId });
 
     if (getUser != null) {
-      await userRepository.findUserAndUpdate({ _id: userId }, { password: new_password });
-      response = ApiResponse.success({}, config.messages['password_change_success']);
+      if (getUser.password == newPassword) {
+        response = ApiResponse.conflict(config.messages['check_password']);
+      }
+      else {
+        await userRepository.findUserAndUpdate({ _id: userId }, { password: newPassword });
+        response = ApiResponse.success({}, config.messages['password_change_success']);
+      }
+
     }
     else {
       response = ApiResponse.notFound(config.messages['invalid_userId']);
@@ -272,7 +305,7 @@ const isRegister = async (requestData) => {
           resObj.message = "not_registered_user";
           resObj.code = 3;
           resObj.result = false;
-          response = ApiResponse.success(resObj, config.messages['not_registered_user'], 202);
+          response = ApiResponse.success(resObj, config.messages['not_registered_user'], 203);
 
         }
         else {
@@ -281,7 +314,7 @@ const isRegister = async (requestData) => {
           resObj.data = (appleData != null) ? appleData : {};
           resObj.code = 3;
           resObj.result = false;
-          response = ApiResponse.success(resObj, config.messages['not_registered_user'], 202);
+          response = ApiResponse.success(resObj, config.messages['not_registered_user'], 203);
         }
       }
       else {
@@ -290,7 +323,7 @@ const isRegister = async (requestData) => {
         resObj.data = {};
         resObj.code = 3;
         resObj.result = false;
-        response = ApiResponse.success(resObj, config.messages['not_registered_user'], 202);
+        response = ApiResponse.success(resObj, config.messages['not_registered_user'], 203);
       }
     }
 
@@ -315,11 +348,11 @@ const verifyForgotPassOTP = async (requestData) => {
         response = ApiResponse.success({ userId: userResponseObj._id }, config.messages['otp_verified']);
       }
       else {
-        response = ApiResponse.success({}, config.messages['invalid_otp'], 202);
+        response = ApiResponse.notFound(config.messages['invalid_otp'], 202);
       }
     }
     else {
-      response = ApiResponse.success({}, config.messages['incorrect_email'], 202);
+      response = ApiResponse.notFound(config.messages['incorrect_email'], 202);
     }
 
 

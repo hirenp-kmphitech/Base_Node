@@ -2,26 +2,26 @@ let userRepository = {};
 const Users = require('../models/Users');
 
 const findUserByEmail = async (email) => {
-    return Users.findOne({ email });
+    return await Users.findOne({ email, deletedAt: null });
 };
 
 const findUserById = async (id) => {
-    return Users.findById(id);
+    return await Users.findById(id);
 };
 
 const findUser = async (filter) => {
-    return Users.findOne(filter);
+    return await Users.findOne({ ...filter, deletedAt: null });
 };
 
 const createUser = async (data) => {
-    return Users.create(data);
+    return await Users.create(data);
 };
 const findUserByEmailPassword = async (email, password) => {
-    return Users.findOne({ email, password });
+    return await Users.findOne({ email, password, deletedAt: null });
 };
 
 const findUserAndUpdate = async (filter, data) => {
-    return Users.findOneAndUpdate(filter, data, { new: true });
+    return await Users.findOneAndUpdate(filter, data, { new: true });
 };
 
 userRepository = {

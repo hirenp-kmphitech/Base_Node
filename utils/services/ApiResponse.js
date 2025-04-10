@@ -6,11 +6,8 @@ class ApiResponse {
         this.statusCode = statusCode;
         this.isSuccess = isSuccess;
         this.data = data;
+        message = (typeof message === "object") ? ((message.message != null) ? message.message : message) : message;
         let resMessage = commonConfig.messages[message] ?? message;
-        if (!resMessage) {
-            resMessage = (typeof message === "object") ? ((message.message != null) ? message.message : message) : message
-        }
-
         this.message = resMessage;
     }
 
@@ -83,6 +80,36 @@ class ApiResponse {
      */
     static forbidden(message = "Forbidden access", data = null) {
         return new ApiResponse(false, 403, message, data);
+    }
+
+    /**
+    * Unauthorized - refresh token response
+    * @param {string} message - Error message (default: "refresh token access")
+    * @param {*} data - Additional error data
+    * @returns {ApiResponse}
+    */
+    static unauthorizedRefresh(message = "Token Expired", data = null) {
+        return new ApiResponse(false, 433, message, data);
+    }
+
+    /**
+     * Update App response
+     * @param {string} message - Error message (default: "Update App")
+     * @param {*} data - Additional error data
+     * @returns {ApiResponse}
+     */
+    static appupdate(message = "Update App", data = null) {
+        return new ApiResponse(false, 426, message, data);
+    }
+
+    /**
+     * Validation error response
+     * @param {string} message - Error message (default: "Validation error")
+     * @param {*} data - Additional error data
+     * @returns {ApiResponse}
+     */
+    static unprocessEntity(message = "Validation error", data = null) {
+        return new ApiResponse(false, 422, message, data);
     }
 }
 

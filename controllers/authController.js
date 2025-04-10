@@ -35,7 +35,7 @@ authController.sendOTP = async (req, res, next) => {
         response = await authService.sendOTP(email);
     } catch (error) {
         console.log("authController.sendOTP - ", error);
-        return next(ApiResponse.badRequest(errorCode));
+        return next(ApiResponse.badRequest(error));
     }
     return res.status(response.statusCode).send(response);
 };
@@ -117,9 +117,9 @@ authController.verifyForgotPassOTP = async function (req, res, next) {
 
 authController.updatePassword = async function (req, res, next) {
     let response;
-    const { userId, new_password } = req.body;
+    const { userId, newPassword } = req.body;
     try {
-        response = await authService.updatePassword(userId, new_password);
+        response = await authService.updatePassword(userId, newPassword);
 
     } catch (errorCode) {
         console.error("authController.updatePassword - ", errorCode);

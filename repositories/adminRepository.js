@@ -1,27 +1,27 @@
 let adminRepository = {};
-const AdminMaster = require('../models/AdminMaster');
+const Admins = require('../models/Admins');
 
 const findUserByEmail = async (email) => {
-    return AdminMaster.findOne({ email });
+    return Admins.findOne({ email });
 };
 
 const findUserById = async (id) => {
-    return AdminMaster.findById(id);
+    return Admins.findById(id);
 };
 
 const findOne = async (filter) => {
-    return AdminMaster.findOne(filter);
+    return Admins.findOne(filter);
 };
 
 const createUser = async (data) => {
-    return AdminMaster.create(data);
+    return Admins.create(data);
 };
 const findUserByEmailPassword = async (email, password) => {
-    return AdminMaster.findOne({ email, password });
+    return Admins.findOne({ email, password });
 };
 
 const findUserAndUpdate = async (filter, data) => {
-    return AdminMaster.findOneAndUpdate(filter, data, { new: true });
+    return Admins.findOneAndUpdate(filter, data, { new: true });
 };
 
 adminRepository = {

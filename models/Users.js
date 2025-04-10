@@ -5,7 +5,6 @@ const Users = new Schema({
   name: { type: String, required: [true, "Please enter Name"] },
   email: { type: String, required: [true, "Please enter Email"] },
   password: { type: String, required: [true, "Please enter Password"] },
-  isConfirm: { type: String, default: 0 },
   profile: { type: String, default: null },
   ucode: { type: String, default: null },
   deviceType: { type: String, enum: ['iOS', 'android'] },

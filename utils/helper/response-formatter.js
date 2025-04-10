@@ -13,6 +13,11 @@ const responseFormatter = function () {
         if (!errorMsg) {
             errorMsg = messageCode;
         }
+        if (typeof errorMsg === 'object' && errorMsg !== null) {
+            console.log('data-->>' + data);
+            console.log('errorMsg-->>' + errorMsg);
+            errorMsg = 'Something went wrong, Please try again';
+        }
 
         const response = {
             version: config.version,

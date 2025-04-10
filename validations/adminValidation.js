@@ -25,7 +25,7 @@ module.exports = {
     resetPasswordSchema: {
         body: Joi.object().keys({
             email: emailSchema.required(),
-            new_password: stringSchema.required(),
+            newPassword: stringSchema.required(),
         })
     },
     userlistSchema: {

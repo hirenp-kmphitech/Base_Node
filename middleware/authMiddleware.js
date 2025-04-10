@@ -2,9 +2,10 @@ const config = require('../config/common.config');
 const ResponseFormatter = require('../utils/helper/response-formatter');
 const formatter = new ResponseFormatter();
 const jwt = require('jsonwebtoken');
-const AdminMaster = require('../models/AdminMaster');
+const Admins = require('../models/Admins');
 const authController = require('../controllers/authController');
-
+const ApiResponse = require('../utils/services/ApiResponse');
+let response;
 
 const authMiddleware = {
     authorize: async function (req, res, next) {
@@ -27,25 +28,31 @@ const authMiddleware = {
             console.log('token', token);
 
             if (!token && errorCode) {
-
-                const finalRes = formatter.formatResponse({}, 401, config.messages[errorCode], false);
-                return res.status(finalRes.statusCode).send(finalRes);
+                response = ApiResponse.unauthorized(config.messages[errorCode]);
+                return res.status(response.statusCode).send(response);
             }
 
 
             jwt.verify(token, config.jwt.secret, async (err, decoded) => {
                 if (err || !decoded || !decoded.userId) {
-                    errorCode = "incorrect_token";
-                    const finalRes = formatter.formatResponse({}, 401, config.messages[errorCode], false);
-                    return res.status(finalRes.statusCode).send(finalRes);
+                    if (err.name == "TokenExpiredError") {
+                        errorCode = "token_expired";
+                        response = ApiResponse.unauthorizedRefresh(config.messages[errorCode]);
+                        return res.status(response.statusCode).send(response);
+                    } else {
+                        errorCode = "incorrect_token";
+                        response = ApiResponse.unauthorized(config.messages[errorCode]);
+                        return res.status(response.statusCode).send(response);
+                    }
                 }
                 console.log('decoded', decoded);
                 // TODO : enable this code if user context is required in auth protected APIs
                 const user = await authController.getUserDetail(decoded.userId);
                 if (user == null) {
                     console.error("authorize failure - ");
-                    const finalRes = formatter.formatResponse({}, 404, config.messages["invalid_userId"], false);
-                    return res.status(finalRes.statusCode).send(finalRes);
+                    response = ApiResponse.notFound(config.messages["invalid_userId"]);
+                    return res.status(response.statusCode).send(response);
+
                 }
                 // eslint-disable-next-line no-param-reassign
                 req.user = user;
@@ -54,8 +61,8 @@ const authMiddleware = {
             });
         } catch (errorCode) {
             console.error("authorize failure - ", errorCode);
-            const finalRes = formatter.formatResponse({}, 407, config.messages[errorCode], false);
-            return res.status(finalRes.statusCode).send(finalRes);
+            response = ApiResponse.badRequest(config.messages[errorCode]);
+            return res.status(response.statusCode).send(response);
         }
     },
     authorizeAdmin: async function (req, res, next) {
@@ -78,25 +85,30 @@ const authMiddleware = {
             console.log('token', token);
 
             if (!token && errorCode) {
-
-                const finalRes = formatter.formatResponse({}, 404, config.messages[errorCode], false);
-                return res.send(finalRes);
+                response = ApiResponse.unauthorized(config.messages[errorCode]);
+                return res.status(response.statusCode).send(response);
             }
 
 
             jwt.verify(token, config.jwt.secret, async (err, decoded) => {
                 if (err || !decoded || !decoded.userId) {
-                    errorCode = "incorrect_token";
-                    const finalRes = formatter.formatResponse({}, 401, config.messages[errorCode], false);
-                    return res.status(401).send(finalRes);
+                    if (err.name == "TokenExpiredError") {
+                        errorCode = "token_expired";
+                        response = ApiResponse.unauthorizedRefresh(config.messages[errorCode]);
+                        return res.status(response.statusCode).send(response);
+                    } else {
+                        errorCode = "incorrect_token";
+                        response = ApiResponse.unauthorized(config.messages[errorCode]);
+                        return res.status(response.statusCode).send(response);
+
+                    }
                 }
                 console.log('decoded', decoded);
                 // TODO : enable this code if user context is required in auth protected APIs
-                const user = await AdminMaster.findOne({ _id: decoded.userId });
+                const user = await Admins.findOne({ _id: decoded.userId });
                 if (user == null) {
-                    console.error("authorize failure - ");
-                    const finalRes = formatter.formatResponse({}, 404, config.messages["incorrect_token"], false);
-                    return res.send(finalRes);
+                    response = ApiResponse.notFound(config.messages["invalid_userId"]);
+                    return res.status(response.statusCode).send(response);
                 }
                 // eslint-disable-next-line no-param-reassign
                 req.user = user;
@@ -104,8 +116,8 @@ const authMiddleware = {
             });
         } catch (errorCode) {
             console.error("authorize failure - ", errorCode);
-            const finalRes = formatter.formatResponse({}, 407, config.messages[errorCode], false);
-            return res.send(finalRes);
+            response = ApiResponse.badRequest(config.messages[errorCode]);
+            return res.status(response.statusCode).send(response);
         }
     },
 };

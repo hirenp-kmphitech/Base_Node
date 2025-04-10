@@ -1,41 +1,42 @@
 const config = require('../config/common.config');
 const ResponseFormatter = require('../utils/helper/response-formatter');
 const formatter = new ResponseFormatter();
-const VersionMaster = require('../models/VersionMaster');
-
+const AppVersion = require('../models/AppVersion');
+const ApiResponse = require('../utils/services/ApiResponse');
+let response;
 
 const routeMiddlewares = {
     validateRequest: function (requestSchema) {
         return (req, res, next) => {
             req.user_Ip = req.socket.remoteAddress;
-            ['headers', 'params', 'query', 'body']
-                .map(key => {
-                    const schema = requestSchema[key];
-                    const value = req[key];
-                    if (schema) {
-                        const { error } = schema.validate(value);
-                        if (error) {
-                            const { details } = error;
-                            const message = details.map(i => i.message).join(',')
+            for (let key of ['headers', 'params', 'query', 'body']) {
+                const schema = requestSchema[key];
 
-                            const finalRes = formatter.formatResponse({}, 422, message, false);
-                            return res.status(finalRes.statusCode).send(finalRes);
-                        }
-                        else {
-                            next();
-                        }
+                if (schema) {
+                    const { error } = schema.validate(req[key]);
+
+                    if (error) {
+                        const { details } = error;
+                        const message = details.map(i => i.message).join(',');
+                        response = ApiResponse.unprocessEntity(message);
+                        return res.status(response.statusCode).send(response);
                     }
-                });
+                }
+            }
+            next();
 
         };
     },
     checkVersion: async function (req, res, next) {
-        let device_version = req.headers.versioncode ?? 1;
-        let deviceType = req.headers.devicetype ?? "android";
-        let current_version = await VersionMaster.findOne({ deviceType: deviceType }).exec();
-        if (current_version && current_version.versionCode > device_version.toString()) {
-            const finalRes = formatter.formatResponse({}, 426, config.messages["update_app_message"], false);
-            return res.status(finalRes.statusCode).send(finalRes);
+        let deviceVersion = req.headers.versioncode;
+        let deviceType = req.headers.devicetype;
+        if (!deviceVersion || !deviceType) {
+            return next();
+        }
+        let current_version = await AppVersion.findOne({ deviceType: deviceType }).exec();
+        if (current_version && current_version.versionCode > deviceVersion.toString()) {
+            response = ApiResponse.appupdate(config.messages["update_app_message"]);
+            return res.status(response.statusCode).send(response);
         } else {
             return next();
         }

@@ -1,5 +1,5 @@
 const fs = require('fs')
-const AdminMaster = require('../models/AdminMaster');
+const Admins = require('../models/Admins');
 const sendMail = require('../utils/services/sendMail')
 const { forgotPasswordMail } = require('../utils/helper/ContentProvider');
 
@@ -9,9 +9,9 @@ const ApiResponse = require('../utils/services/ApiResponse');
 
 (async () => {
     try {
-        const findAdmin = await AdminMaster.findOne({ email: "admin@gmail.com" })
+        const findAdmin = await Admins.findOne({ email: "admin@gmail.com" })
         if (!findAdmin) {
-            new AdminMaster({
+            new Admins({
                 name: "admin",
                 email: "admin@gmail.com",
                 password: "12345678",
@@ -58,9 +58,9 @@ const verifyOTP = async (req, res, next) => {
 
 const resetPassword = async (req, res, next) => {
     let response;
-    const { email, new_password } = req.body;
+    const { email, newPassword } = req.body;
     try {
-        response = await adminService.resetPassword(email, new_password);
+        response = await adminService.resetPassword(email, newPassword);
     } catch (error) {
         return next(ApiResponse.badRequest(error));
     }

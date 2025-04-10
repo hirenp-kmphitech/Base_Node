@@ -34,8 +34,8 @@ Messages.statics = {
    * @param {*} filter 
    * @returns 
    */
-  async list(filter, fields = "", sort = "") {
-    return this.find(filter).populate("senderId", "fname lname profile tag_id is_verified deviceToken user_type").populate("receiverId", "fname lname profile tag_id is_verified deviceToken user_type").select(fields).sort(sort).exec();
+  async list(filter, fields = "", sort = "", skip = 0, limit = 10) {
+    return this.find(filter).populate("senderId", "fname lname profile tag_id is_verified deviceToken user_type").populate("receiverId", "fname lname profile tag_id is_verified deviceToken user_type").select(fields).sort(sort).skip(skip).limit(limit).exec();
   }
 }
 

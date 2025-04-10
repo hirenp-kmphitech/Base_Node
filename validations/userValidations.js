@@ -1,5 +1,5 @@
 const Joi = require('joi');
-const emailSchema = Joi.string();
+const emailSchema = Joi.string().email();
 const stringSchema = Joi.string();
 
 Joi.objectId = require('joi-objectid')(Joi)
@@ -9,7 +9,7 @@ module.exports = {
         body: Joi.object().keys({
             name: stringSchema.required(),
             email: emailSchema.required(),
-            pass: stringSchema.required(),
+            pass: stringSchema.required().allow(""),
             profile: Joi.any(),
             deviceType: stringSchema,
             deviceToken: stringSchema,
@@ -68,8 +68,8 @@ module.exports = {
     },
     changePassSchema: {
         body: Joi.object().keys({
-            old_password: stringSchema.required(),
-            new_password: stringSchema.required(),
+            oldPassword: stringSchema.required(),
+            newPassword: stringSchema.required(),
         })
     },
     OTPSchema: {
@@ -80,7 +80,7 @@ module.exports = {
     },
     updatePassSchema: {
         body: Joi.object().keys({
-            new_password: stringSchema.required(),
+            newPassword: stringSchema.required(),
             userId: Joi.objectId().required(),
         })
     },

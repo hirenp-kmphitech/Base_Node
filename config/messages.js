@@ -1,5 +1,6 @@
 module.exports = {
     'incorrect_token': 'You are not authorized to access associated web-services.',
+    'token_expired': 'You are not authorized to access the associated web services. It seems the token has expired',
     'token_updated_success': 'Token updated successfully.',
     'update_app_message': 'Please update the app to continue using it without missing any new updates.',
 
@@ -16,7 +17,7 @@ module.exports = {
     'login_success': 'Login successful.',
     'logout_success': 'Logout successful.',
     'profile_update': 'Profile updated successfully.',
-    'check_password': 'Your new password is same as old password. Please use different new password.',
+    'check_password': 'Your new password is same as current password. Please use different new password.',
     'check_old_password': 'Your old password is incorrect.',
     'password_change_success': 'Your password has been changed successfully. Please login with your new password.',
     'reset_password_success': 'We have sent OTP to your email address.',
