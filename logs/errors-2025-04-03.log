@@ -1,0 +1,20 @@
+2025-04-03 12:15:53 [ERROR]: Error occurred: userTransactionsRepository is not defined - StatusCode: 400
+2025-04-03 12:43:23 [ERROR]: Error occurred: Unexpected token o in JSON at position 1 - StatusCode: 400
+2025-04-03 12:44:37 [ERROR]: Error occurred: Cannot read properties of undefined (reading 'subscriptionId') - StatusCode: 400
+2025-04-03 12:45:04 [ERROR]: Error occurred: Cannot read properties of undefined (reading 'subscriptionId') - StatusCode: 400
+2025-04-03 12:45:26 [ERROR]: Error occurred: [object Object] - StatusCode: 400
+2025-04-03 12:45:57 [ERROR]: Error occurred: Invalid request - StatusCode: 400
+2025-04-03 12:46:43 [ERROR]: Error occurred: Invalid request - StatusCode: 400
+2025-04-03 12:47:02 [ERROR]: Error occurred: Invalid request - StatusCode: 400
+2025-04-03 12:48:38 [ERROR]: Error occurred: Invalid request - StatusCode: 400
+2025-04-03 12:49:08 [ERROR]: Error occurred: inAppPurchaseService.getAppleNotification is not a function - StatusCode: 400
+2025-04-03 12:50:20 [ERROR]: Error occurred: Cannot read properties of undefined (reading 'split') - StatusCode: 400
+2025-04-03 13:03:12 [ERROR]: Error occurred: Unexpected token } in JSON at position 216 - StatusCode: 400
+2025-04-03 13:03:20 [ERROR]: Error occurred: user_transactions validation failed: appleTransactionId: Cast to date failed for value "GPA.3390-7772-0700-20018..5" (type string) at path "appleTransactionId", originalTransactionId: Cast to date failed for value "ddbekfdiijehiicojdkphaae.AO-J1OzwEaR_uHLBPJibPc6KeiMhXOueQiMSL-2PoVdx3qgI1FJxihjCPUNWygmPVMXjxW-KZDTYoSxCY7IBk68eJk-i_iRc4A" (type string) at path "originalTransactionId" - StatusCode: 400
+2025-04-03 13:55:57 [ERROR]: Error occurred: user_transactions validation failed: appleTransactionId: Cast to date failed for value "GPA.3390-7772-0700-20018..5" (type string) at path "appleTransactionId", originalTransactionId: Cast to date failed for value "ddbekfdiijehiicojdkphaae.AO-J1OzwEaR_uHLBPJibPc6KeiMhXOueQiMSL-2PoVdx3qgI1FJxihjCPUNWygmPVMXjxW-KZDTYoSxCY7IBk68eJk-i_iRc4A" (type string) at path "originalTransactionId" - StatusCode: 400
+2025-04-03 13:56:04 [ERROR]: Error occurred: Invalid request - StatusCode: 400
+2025-04-03 14:01:36 [ERROR]: Error occurred: Invalid request - StatusCode: 400
+2025-04-03 14:01:39 [ERROR]: Error occurred: Cannot find /api/inapppurchase/appleRestorePlanSchema on this server - StatusCode: 404
+2025-04-03 14:01:55 [ERROR]: Error occurred: appleTransactionsRepository is not defined - StatusCode: 400
+2025-04-03 14:07:30 [ERROR]: Error occurred: Cannot read properties of undefined (reading 'split') - StatusCode: 400
+2025-04-03 14:08:13 [ERROR]: Error occurred: Cannot read properties of undefined (reading 'split') - StatusCode: 400

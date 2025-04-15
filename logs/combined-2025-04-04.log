@@ -1,0 +1,359 @@
+2025-04-04 12:12:01 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:12:01 [ERROR]: Error occurred: Cannot find /upload on this server - StatusCode: 404
+2025-04-04 12:12:01 [INFO]: Outgoing response: POST /upload - Status: 404 - Duration: 6ms - Response: "{\"version\":\"1.0.0\",\"statusCode\":404,\"isSuccess\":false,\"data\":null,\"message\":\"Cannot find /upload on this server\"}"
+2025-04-04 12:12:10 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:12:10 [ERROR]: Error occurred: Cannot find /upload on this server - StatusCode: 404
+2025-04-04 12:12:10 [INFO]: Outgoing response: POST /upload - Status: 404 - Duration: 2ms - Response: "{\"version\":\"1.0.0\",\"statusCode\":404,\"isSuccess\":false,\"data\":null,\"message\":\"Cannot find /upload on this server\"}"
+2025-04-04 12:12:20 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:12:20 [ERROR]: Error occurred: Cannot find /upload on this server - StatusCode: 404
+2025-04-04 12:12:20 [INFO]: Outgoing response: POST /upload - Status: 404 - Duration: 2ms - Response: "{\"version\":\"1.0.0\",\"statusCode\":404,\"isSuccess\":false,\"data\":null,\"message\":\"Cannot find /upload on this server\"}"
+2025-04-04 12:12:48 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:14:42 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:15:24 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:15:56 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:16:33 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:16:33 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 22ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:17:10 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:17:10 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 21ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:17:49 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:17:49 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 114ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:18:44 [INFO]: Incoming request: GET /video/myvideo.mp4 - Body: {}
+2025-04-04 12:25:04 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:25:05 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 113ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:25:05 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:25:05 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 90ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:25:05 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:25:05 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 87ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:25:06 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:25:06 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 91ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:25:06 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:25:06 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 91ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:25:06 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:25:06 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 96ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:25:06 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:25:07 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 89ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:25:07 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:25:07 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 97ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:25:07 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:25:07 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 91ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:25:07 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:25:07 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 90ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:25:08 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:25:08 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 87ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:25:08 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:25:08 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 91ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:25:08 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:25:08 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 99ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:25:08 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:25:08 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 89ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:25:08 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:25:08 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 16ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:26:16 [INFO]: Incoming request: GET /video/myvideo.mp4 - Body: {}
+2025-04-04 12:26:42 [INFO]: Incoming request: GET /video/myvideo.mp4 - Body: {}
+2025-04-04 12:27:20 [INFO]: Incoming request: GET /favicon.ico - Body: {}
+2025-04-04 12:27:23 [INFO]: Incoming request: GET /video/myvideo.mp4 - Body: {}
+2025-04-04 12:27:23 [INFO]: Incoming request: GET /video/myvideo.mp4 - Body: {}
+2025-04-04 12:27:28 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:27:28 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 116ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:29:00 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:29:00 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 119ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:29:00 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:29:01 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 92ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:29:01 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:29:01 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 91ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:29:01 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:29:01 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 89ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:29:01 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:29:01 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 91ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:29:02 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:29:02 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 348ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:29:02 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:29:02 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 96ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:29:02 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:29:02 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 103ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:29:03 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:29:03 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 136ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:29:03 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:29:03 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 99ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:29:03 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:29:03 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 91ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:29:03 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:29:03 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 90ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:29:03 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:29:04 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 108ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:29:04 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:29:04 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 89ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:29:04 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:29:04 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 30ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:29:34 [INFO]: Incoming request: GET /video/myvideo.mp4 - Body: {}
+2025-04-04 12:29:34 [INFO]: Outgoing response: GET /video/myvideo.mp4 - Status: 404 - Duration: 3ms - Response: "Not Found"
+2025-04-04 12:29:36 [INFO]: Incoming request: GET /video/myvideo.mp4 - Body: {}
+2025-04-04 12:29:36 [INFO]: Outgoing response: GET /video/myvideo.mp4 - Status: 404 - Duration: 2ms - Response: "Not Found"
+2025-04-04 12:29:52 [INFO]: Incoming request: GET /video/documetech_testflight.mp4 - Body: {}
+2025-04-04 12:30:08 [INFO]: Incoming request: GET /video/documetech_testflight.mp4 - Body: {}
+2025-04-04 12:30:08 [INFO]: Incoming request: GET /video/documetech_testflight.mp4 - Body: {}
+2025-04-04 12:39:29 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:29 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 126ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:39:31 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:31 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 121ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:39:33 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:33 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 113ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:39:35 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:35 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 109ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:39:37 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:37 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 111ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:39:38 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:38 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 110ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:39:41 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:41 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 116ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:39:43 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:43 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 107ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:39:44 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:45 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 123ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:39:46 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:46 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 111ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:39:47 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:47 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 110ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:39:49 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:49 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 120ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:39:51 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:51 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 111ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:39:52 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:52 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 130ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:39:53 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:53 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 109ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:39:55 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:55 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 125ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:39:57 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:57 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 113ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:39:58 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:39:59 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 126ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:00 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:00 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 113ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:01 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:01 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 105ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:03 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:03 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 111ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:05 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:05 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 106ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:07 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:07 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 109ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:08 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:08 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 107ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:09 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:09 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 103ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:11 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:11 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 107ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:12 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:12 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 107ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:13 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:13 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 104ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:14 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:14 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 106ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:16 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:16 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 121ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:18 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:18 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 110ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:20 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:20 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 111ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:21 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:21 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 121ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:23 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:23 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 127ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:24 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:24 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 108ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:25 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:26 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 115ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:27 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:27 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 108ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:28 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:28 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 110ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:29 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:30 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 110ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:31 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:31 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 110ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:32 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:32 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 107ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:34 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:34 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 120ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:35 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:35 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 121ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:36 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:36 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 115ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:38 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:38 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 111ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:39 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:40 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 110ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:41 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:41 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 107ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:42 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:42 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 103ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:44 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:44 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 130ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:45 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:45 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 89ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:46 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:46 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 111ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:48 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:48 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 113ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:49 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:49 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 118ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:40:50 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:40:50 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 105ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:42:32 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:42:32 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 923ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:42:35 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:42:36 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 923ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:42:39 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:42:40 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 955ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:42:42 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:42:43 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 938ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:42:45 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:42:46 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 927ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:42:49 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:42:50 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 948ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:42:52 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:42:53 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 1007ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:42:56 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:42:57 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 926ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:42:59 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:00 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 933ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:02 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:03 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 925ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:05 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:06 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 952ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:09 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:10 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 934ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:12 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:13 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 942ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:15 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:17 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 1226ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:19 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:20 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 1029ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:22 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:23 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 1124ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:25 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:26 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 928ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:29 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:30 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 972ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:33 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:34 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 1030ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:36 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:38 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 1150ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:40 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:41 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 947ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:44 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:45 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 1022ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:46 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:47 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 929ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:50 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:50 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 939ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:52 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:53 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 960ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:55 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:43:56 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 1010ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:43:59 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:44:00 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 1025ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:44:02 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:44:03 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 946ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:44:05 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:44:06 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 981ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:44:08 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:44:09 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 930ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:44:11 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:44:12 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 919ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:44:14 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:44:15 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 1012ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:44:18 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:44:19 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 917ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:44:22 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:44:23 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 924ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:44:25 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:44:26 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 919ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:44:30 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:44:31 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 932ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:44:34 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:44:35 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 948ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:44:36 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:44:37 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 939ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:44:39 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:44:40 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 951ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:44:43 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:44:44 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 947ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:44:46 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:44:47 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 932ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:44:51 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:44:52 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 934ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:44:56 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:44:57 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 923ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:00 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:01 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 923ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:03 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:04 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 937ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:06 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:07 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 920ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:09 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:10 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 930ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:12 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:13 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 934ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:15 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:16 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 971ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:18 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:19 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 932ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:21 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:22 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 931ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:24 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:25 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 928ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:27 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:28 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 935ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:31 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:32 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 914ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:35 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:36 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 926ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:39 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:40 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 958ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:42 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:43 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 929ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:45 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:46 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 929ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:48 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:49 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 926ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:52 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:53 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 931ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:55 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:56 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 930ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:45:58 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:45:59 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 951ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:46:02 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:46:03 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 930ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:46:05 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:46:05 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 924ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:46:07 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:46:08 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 943ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:46:10 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:46:11 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 929ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:46:13 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:46:14 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 930ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:46:16 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:46:17 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 929ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:46:19 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:46:20 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 960ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:46:22 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:46:23 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 933ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:46:24 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:46:25 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 746ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:47:12 [INFO]: Incoming request: GET /video/tubavent_eu_market.mp4 - Body: {}
+2025-04-04 12:47:12 [INFO]: Incoming request: GET /video/tubavent_eu_market.mp4 - Body: {}
+2025-04-04 12:47:41 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:47:42 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 1070ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:47:42 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:47:42 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 12ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:47:43 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:47:43 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 397ms - Response: "{\"message\":\"Uploaded successfully\"}"
+2025-04-04 12:48:02 [INFO]: Incoming request: GET /video/nature_9.jpeg - Body: {}
+2025-04-04 12:48:02 [INFO]: Incoming request: GET /video/nature_9.jpeg - Body: {}
+2025-04-04 12:48:13 [INFO]: Incoming request: GET /video/documetech_testflight.mp4 - Body: {}
+2025-04-04 12:48:13 [INFO]: Incoming request: GET /video/documetech_testflight.mp4 - Body: {}
+2025-04-04 12:48:17 [INFO]: Incoming request: GET /video/tubavent_eu_market.mp4 - Body: {}
+2025-04-04 12:54:38 [INFO]: Incoming request: POST /upload - Body: {}
+2025-04-04 12:54:39 [INFO]: Outgoing response: POST /upload - Status: 200 - Duration: 155ms - Response: "{\"message\":\"Uploaded successfully\"}"
